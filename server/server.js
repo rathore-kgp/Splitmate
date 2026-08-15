@@ -9,17 +9,15 @@ const tripRoutes = require('./routes/tripRoutes');
 
 const app = express();
 app.use(cors({
-    origin: ['https://split-mate-two.vercel.app'],
+    origin: ['https://split-mate-two.vercel.app', 'http://localhost:5173', 'http://localhost:3000'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
      credentials: true,
   }));
 app.use(express.json());
 
 // DB Connection
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-}).then(() => console.log('MongoDB Connected'))
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log('MongoDB Connected'))
   .catch((err) => console.log(err));
 
 // Routes
