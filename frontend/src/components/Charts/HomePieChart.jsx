@@ -3,7 +3,7 @@ import { PieChart, Pie, Cell, Legend, ResponsiveContainer } from 'recharts';
 import './HomePieChart.css';
 import fetchWithAuth from '../../utils/fetchWihAuth';
 
-const API_BASE = 'https://splitmate-zqda.onrender.com';
+const API_BASE = (import.meta.env.VITE_API_URL || 'http://localhost:5000');
 const COLORS = ["#2563eb", "#60a5fa", "#38bdf8", "#818cf8", "#fbbf24", "#f87171"];
 
 const HomePieChart = () => {

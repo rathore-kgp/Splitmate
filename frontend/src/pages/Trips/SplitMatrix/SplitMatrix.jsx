@@ -5,7 +5,7 @@ import TripNavbar from '../../../components/Navbar/TripNavbar';
 import fetchWithAuth from '../../../utils/fetchWihAuth';
 import './SplitMatrix.css';
 
-const API_BASE = 'https://splitmate-zqda.onrender.com';
+const API_BASE = (import.meta.env.VITE_API_URL || 'http://localhost:5000');
 
 const SplitMatrix = () => {
   const { tripId } = useParams();

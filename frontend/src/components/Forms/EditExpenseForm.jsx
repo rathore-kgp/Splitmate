@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import './EditExpenseFormStyles.css';
 import fetchWithAuth from '../../utils/fetchWihAuth';
 
-const API_BASE = 'https://splitmate-zqda.onrender.com';
+const API_BASE = (import.meta.env.VITE_API_URL || 'http://localhost:5000');
 const defaultCategories = ['food', 'travel', 'stay', 'shopping', 'custom'];
 
 const EditExpenseForm = () => {

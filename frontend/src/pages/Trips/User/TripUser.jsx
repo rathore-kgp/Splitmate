@@ -6,7 +6,7 @@ import TripUserPieChart from '../../../components/Charts/TripUserPieChart';
 import fetchWithAuth from '../../../utils/fetchWihAuth';
 import './TripUser.css';
 
-const API_BASE = 'https://splitmate-zqda.onrender.com';
+const API_BASE = (import.meta.env.VITE_API_URL || 'http://localhost:5000');
 
 const TripUser = () => {
   const { tripId } = useParams();

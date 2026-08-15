@@ -7,7 +7,7 @@ import TripOverviewBarChart from '../../../components/Charts/TripOverviewBarChar
 import fetchWithAuth from '../../../utils/fetchWihAuth';
 import './tripOverview.css';
 
-const API_BASE = 'https://splitmate-zqda.onrender.com';
+const API_BASE = (import.meta.env.VITE_API_URL || 'http://localhost:5000');
 
 const TripOverview = () => {
   const { tripId } = useParams();
