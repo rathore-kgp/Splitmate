@@ -2,13 +2,10 @@
 SplitMate simplifies expense sharing across trips and friends.  Create trips, add expenses, track who owes whom, and view category-wise summaries — all in one intuitive dashboard.  With real-time balances and clear charts, SplitMate keeps everyone fair and stress-free so you can focus on making memories.
 
 ---
-Demo Video Link - https://drive.google.com/file/d/1LPVAPR9g6YUNZEg0RO-P2JpLBJ0AuuLE/view?usp=drive_link
-
----
 
 # Deployment Links
-- Frontend (Vercel): https://split-mate-two.vercel.app/
-- Backend (Render): https://splitmate-zqda.onrender.com/
+- Frontend (Vercel):  https://splitmate-beta.vercel.app
+- Backend (Render):  https://splitmate-4gwo.onrender.com
 
 # Features
 ## ✅ **User Authentication**
